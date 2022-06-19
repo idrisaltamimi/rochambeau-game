@@ -72,6 +72,12 @@ header {
 }
 
 /* media query */
+@media(max-width:350px) {
+   header {
+      margin: 5px auto 15px auto;
+   }
+}
+
 @media(min-width:600px) {
    header {
       min-width: 400px;
@@ -474,6 +480,39 @@ header {
    color: #fff;
    font-size: 55px;
    white-space: nowrap;
+}
+
+@media (max-width:350px) {
+   .results {
+      grid-template: 130px 16px auto 20px auto / 130px 58px 130px;
+   }
+
+   .player-card,
+   .cpu-card {
+      width: 130px;
+      height: 130px;
+   }
+
+   .winner {
+      width: 215px;
+      height: 215px;
+      background-color: rgb(46, 63, 92);
+      border: 22px solid #293a58;
+   }
+
+   .player-text,
+   .cpu-text {
+      font-size: 10px;
+   }
+
+   .title-results {
+      font-size: 40px;
+   }
+
+   .play-again-btn {
+      padding: 10px 0;
+      font-size: 10px;
+   }
 }
 
 @media (max-width:380px) {
