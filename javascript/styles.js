@@ -1,8 +1,7 @@
 import { data } from "./data.js"
 
 export function styles(player, id) {
-   const image = data[id].image
-   player.style.background = `${image} no-repeat center/${data[id].size}, linear-gradient(#fff, #fff) padding-box,linear-gradient(to top, ${data[id].background}) border-box`
+   player.style.background = `url(../images/icon-${data[id].id}.svg) no-repeat center/${data[id].size}, linear-gradient(#fff, #fff) padding-box,linear-gradient(to top, ${data[id].background}) border-box`
 
    const boxShadow = x => {
       if (x.matches) {
